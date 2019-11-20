@@ -10,7 +10,7 @@ data=data[genes.f,rownames(meta)];
 
 #modify glmer function and set nAGQ to 0
 trace(glmer, edit=T)
-#use Shift+I to insert "nAGQ = 0" in the beginning of the function's body
+#use Shift+I to insert "nAGQ = 0" in the beginning of the function's body. Hit ESC, then :wq+ENTER to save.
 
 #now run DEG. I recommend using 512GB of RAM and 8 cores (or scale accordingly)
 Sys.setenv(MC_CORES=8);
